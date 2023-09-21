@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap");
+.main {
+  background: hsl(212, 45%, 89%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.attribution {
+  text-align: center;
+  width: 280px;
+  background: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.text {
+  margin: 0 15px;
+  font-family: "Outfit", sans-serif;
+}
+.text h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  margin: 15px 0;
+}
+.text p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
+  margin-bottom: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */

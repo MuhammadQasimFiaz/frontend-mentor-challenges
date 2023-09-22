@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap");
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 10px 10px hsla(166, 100%, 37%, 0.2);
+}
+.main .col-md-6 {
+  padding: 0;
+}
+.main .main_left {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  font-family: "Hanken Grotesk", sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+.main .main_left h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+  text-transform: capitalize;
+}
+.main .main_left .circle {
+  background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  margin: 20px 0;
+}
+.main .main_left .circle h3 {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1;
+}
+.main .main_left .circle h5 {
+  font-size: 10px;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+}
+.main .main_left .great {
+  color: #fff;
+}
+.main .main_left p {
+  font-size: 14px;
+  font-weight: 300;
+  color: hsl(241, 100%, 89%);
+  margin-top: 20px;
+}
+.main .main_right {
+  padding: 16px 25px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.main .main_right ul {
+  margin: 20px 0;
+}
+.main .main_right ul li {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  line-height: 35px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.main .main_right ul li span.num {
+  color: hsl(224, 30%, 27%);
+}
+.main .main_right ul .light_red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.main .main_right ul .light_red span {
+  color: hsl(0, 100%, 67%);
+}
+.main .main_right ul .orange_yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  margin-top: 10px;
+}
+.main .main_right ul .orange_yellow span {
+  color: hsl(39, 100%, 56%);
+}
+.main .main_right ul .green_teal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  margin: 10px 0;
+}
+.main .main_right ul .green_teal span {
+  color: hsl(166, 100%, 37%);
+}
+.main .main_right ul .cobalt_blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.main .main_right ul .cobalt_blue span {
+  color: hsl(234, 85%, 45%);
+}
+.main .main_right a {
+  text-decoration: none;
+  width: 100%;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.45s;
+  background-color: hsl(224, 30%, 27%);
+}
+.main .main_right a:hover {
+  background-color: hsl(241, 81%, 54%);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main {
+    width: auto;
+    position: unset;
+    transform: unset;
+    box-shadow: none;
+  }
+  .main .main_left {
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

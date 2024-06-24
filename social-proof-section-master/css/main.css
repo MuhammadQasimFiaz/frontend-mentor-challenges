@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/***********************/
+.margin_l_15 {
+  margin-left: 15px;
+}
+
+.margin_l_63 {
+  margin-left: 63px;
+}
+
+.margin_l_111 {
+  margin-left: 111px;
+}
+
+.margin_t_30 {
+  margin-top: 30px;
+}
+
+.margin_t_60 {
+  margin-top: 60px;
+}
+
+/***********************/
+main {
+  display: grid;
+  grid-gap: 50px;
+  place-items: center;
+  height: 100vh;
+}
+main .first-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .first-item .item1 {
+  font-family: "League Spartan", sans-serif;
+  margin-right: 145px;
+}
+main .first-item .item1 h1 {
+  font-size: 57px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  line-height: 1;
+}
+main .first-item .item1 h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: hsl(303, 10%, 53%);
+  margin-top: 30px;
+}
+main .first-item .item2 {
+  font-family: "League Spartan", sans-serif;
+}
+main .first-item .item2 ul li {
+  width: 400px;
+  height: 56px;
+  line-height: 56px;
+  background-color: hsl(300, 24%, 96%);
+  padding-left: 30px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+main .first-item .item2 ul li:last-child {
+  margin-bottom: 0;
+}
+main .first-item .item2 ul li span {
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+main .first-item .item2 ul li > div {
+  display: inline-block;
+}
+main .second-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+main .second-item .item3 {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 5px;
+  padding: 30px 0;
+  align-self: start;
+}
+main .second-item .item3 .name {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+main .second-item .item3 .name img {
+  border-radius: 50%;
+  width: 15%;
+}
+main .second-item .item3 .name ul li {
+  font-family: "League Spartan", sans-serif;
+  margin-left: 20px;
+}
+main .second-item .item3 .name ul li:first-child {
+  color: hsl(0, 0%, 100%);
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 700;
+}
+main .second-item .item3 .name ul li:last-child {
+  color: hsl(303, 10%, 53%);
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 700;
+}
+main .second-item .item3 .detail {
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+main .second-item .item3 .detail p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 1199.98px) {
+  main .first-item .item1 {
+    margin-right: 70px;
+  }
+  main .first-item .item1 h1 {
+    font-size: 45px;
+  }
+  main .first-item .item1 h2 {
+    font-size: 18px;
+  }
+  main .second-item .item3 .detail p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  main .first-item .item2 ul li {
+    width: 320px;
+    padding-left: 15px;
+  }
+  main .first-item .item1 {
+    margin-right: 0px;
+  }
+  main .first-item {
+    column-gap: 20px;
+  }
+  main .first-item .item1 h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 767.98px) {
+  main .first-item {
+    grid-template-columns: 1fr;
+  }
+  main .first-item .item2 {
+    margin-top: 30px;
+  }
+  main .first-item .item2 ul li {
+    width: 100%;
+    height: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0 15px 0;
+  }
+  .margin_l_15 {
+    margin-left: 0;
+  }
+  .margin_l_63 {
+    margin-left: 0;
+  }
+  .margin_l_111 {
+    margin-left: 0;
+  }
+  main .second-item {
+    grid-template-columns: 1fr;
+  }
+  .margin_t_30 {
+    margin-top: 0;
+  }
+  .margin_t_60 {
+    margin-top: 0;
+  }
+  main .first-item .item2 ul li span {
+    margin-left: 10px;
+  }
+  main .first-item .item2 ul li > div {
+    line-height: 1;
+  }
+  main .first-item .item2 ul li span {
+    line-height: 1;
+    margin-top: 10px;
+  }
+  main .first-item .item1 {
+    text-align: center;
+  }
+  main .first-item .item1 h1 {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+p,h1,h2,h3,h4,h5,h6,ul{margin: 0;padding: 0;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+
+.heading {
+    font-family: 'Big Shoulders Display', cursive;
+    color: #fff;
+    margin-top: 40px;
+}
+.paragraph {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin: 40px 0 60px 0;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    outline: 0;
+    border: 0;
+    background-color: #fff;
+    transition: 0.45s;
+}
+.main_project {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .main_column {
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        .col_1 {
+            background-color: hsl(31, 77%, 52%);
+            min-height: 400px;
+            min-width: 300px;
+            padding: 40px;
+            h2 {
+                @extend .heading;
+            }
+            p {
+                @extend .paragraph;
+            }
+            button {
+                @extend .button;
+                color: hsl(31, 77%, 52%);
+                &:hover {
+                    background-color: hsl(31, 77%, 52%);
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
+        }
+        .col_2 {
+            background-color: hsl(184, 100%, 22%);
+            min-height: 400px;
+            min-width: 300px;
+            padding: 40px;
+            h2 {
+                @extend .heading;
+            }
+            p {
+                @extend .paragraph;
+            }
+            button {
+                @extend .button;
+                color: hsl(184, 100%, 22%);
+                &:hover {
+                    background-color: hsl(184, 100%, 22%);
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
+        }
+        .col_3 {
+            background-color: hsl(179, 100%, 13%);
+            min-height: 400px;
+            min-width: 300px;
+            padding: 40px;
+            h2 {
+                @extend .heading;
+            }
+            p {
+                @extend .paragraph;
+            }
+            button {
+                @extend .button;
+                color: hsl(179, 100%, 13%);
+                &:hover {
+                    background-color: hsl(179, 100%, 13%);
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 1200px){
+
+    .container{
+        max-width: 1170px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .main_project {
+        position: unset;
+        transform: none;
+    }
+    .main_project .main_column {
+        flex-direction: column;
+        padding: 70px 10px
+    }
+    .main_project .main_column .col_1 {
+        border-radius: 10px 10px 0 0;
+    }
+    .main_project .main_column .col_3 {
+        border-radius: 0 0 10px 10px;
+    }
+}

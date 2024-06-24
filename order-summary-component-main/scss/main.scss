@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+p,h1,h2,h3,h4,h5,h6,ul{margin: 0;padding: 0;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+
+.card_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    // background-image: url('../images/pattern-background-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .cards {
+        max-width: 450px;
+        border-radius: 10px;
+        overflow: hidden;
+        .card_data {
+            font-family: 'Red Hat Display', sans-serif;
+            padding: 25px 42px;
+            text-align: center;
+            background-color: #fff;
+            h1 {
+                font-size: 30px;
+                font-weight: 900;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                color: hsl(224, 23%, 55%);
+                margin: 20px 0 15px 0;
+            }
+            .annual_plan {
+                display: flex;
+                align-items: center;
+                background-color: hsl(225, 100%, 98%);
+                padding: 20px;
+                border-radius: 10px;
+                ul {
+                    margin-left: 15px;
+                    line-height: 1;
+                    li {
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: hsl(224, 23%, 55%);
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .annual {
+                        font-weight: 700;
+                        color: #000;
+                    }
+                }
+                a {
+                    float: right;
+                    margin: 0 0 0 auto;
+                    color: hsl(245, 75%, 52%);
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover {
+                        color: hsl(224, 23%, 55%);
+                    }
+                }
+            }
+            .payment {
+                .proceed {
+                    display: block;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #fff;
+                    background-color: hsl(245, 75%, 52%);
+                    border-radius: 10px;
+                    box-shadow: 0 10px 15px hsl(225, 100%, 94%);
+                    margin: 20px 0 25px 0;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    &:hover {
+                        background-color: hsl(224, 23%, 55%);
+                    }
+                }
+                .cancel {
+                    color: hsl(224, 23%, 55%);
+                    font-size: 16px;
+                    font-weight: 700;
+                    &:hover {
+                        color: hsl(223, 47%, 23%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card_main {
+        background-image: url('../images/pattern-background-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card_main {
+        padding: 30px 15px;
+    }
+    .card_main .cards .card_data h1 {
+        font-size: 26px;
+    }
+    .card_main .cards .card_data {
+        padding: 20px;
+    }
+    .card_main .cards .card_data p {
+        font-size: 14px;
+    }
+    .card_main .cards .card_data .annual_plan {
+        padding: 10px; 
+    }
+    .card_main .cards .card_data .annual_plan ul li {
+        font-size: 14px;
+    }    
+    .card_main .cards .card_data .annual_plan a {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/***********************/
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.grid-container .testimonial-card {
+  border-radius: 10px;
+  padding: 35px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  cursor: pointer;
+  transition: 0.45s;
+}
+.grid-container .testimonial-card .name {
+  display: flex;
+  align-items: center;
+}
+.grid-container .testimonial-card .name img {
+  border-radius: 50%;
+}
+.grid-container .testimonial-card .name li {
+  margin-left: 20px;
+}
+.grid-container .testimonial-card .name li:first-child {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 700;
+}
+.grid-container .testimonial-card .name li:last-child {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 700;
+}
+.grid-container .testimonial-card .detail {
+  margin: 20px 0 0 0;
+}
+.grid-container .testimonial-card .detail h2 {
+  font-size: 23px;
+  font-weight: 600;
+}
+.grid-container .testimonial-card .detail p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.grid-container .testimonial-card:hover {
+  transform: scale(1.05);
+}
+.grid-container .card1 {
+  background-color: hsl(263, 55%, 52%);
+  grid-column: 1/3;
+}
+.grid-container .card1 .name li:first-child {
+  color: hsl(0, 0%, 100%);
+}
+.grid-container .card1 .name li:last-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+.grid-container .card1 .detail h2 {
+  color: hsl(0, 0%, 100%);
+}
+.grid-container .card1 .detail p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.grid-container .card2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-column: 3/4;
+}
+.grid-container .card2 .name li:first-child {
+  color: hsl(0, 0%, 100%);
+}
+.grid-container .card2 .name li:last-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+.grid-container .card2 .detail h2 {
+  color: hsl(0, 0%, 100%);
+}
+.grid-container .card2 .detail p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.grid-container .card3 {
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.grid-container .card3 .name li:first-child {
+  color: hsl(217, 19%, 35%);
+}
+.grid-container .card3 .name li:last-child {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+.grid-container .card3 .detail h2 {
+  color: hsl(217, 19%, 35%);
+}
+.grid-container .card3 .detail p {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+.grid-container .card4 {
+  background-color: hsl(0, 0%, 100%);
+  grid-column: 1/2;
+}
+.grid-container .card4 .name li:first-child {
+  color: hsl(217, 19%, 35%);
+}
+.grid-container .card4 .name li:last-child {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+.grid-container .card4 .detail h2 {
+  color: hsl(217, 19%, 35%);
+}
+.grid-container .card4 .detail p {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+.grid-container .card5 {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2/4;
+}
+.grid-container .card5 .name li:first-child {
+  color: hsl(0, 0%, 100%);
+}
+.grid-container .card5 .name li:last-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+.grid-container .card5 .detail h2 {
+  color: hsl(0, 0%, 100%);
+}
+.grid-container .card5 .detail p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1199px) {
+  .grid-container .testimonial-card {
+    height: fit-content;
+  }
+  .grid-container .card1 {
+    grid-column: 1/3;
+  }
+  .grid-container .card2 {
+    grid-column: 3/5;
+  }
+  .grid-container .card3 {
+    grid-column: 1/5;
+    grid-row: 3;
+  }
+  .grid-container .card4 {
+    grid-column: 1/3;
+  }
+  .grid-container .card5 {
+    grid-column: 3/5;
+  }
+}
+@media (max-width: 767.98px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 20px;
+  }
+  .grid-container .card1, .grid-container .card2, .grid-container .card3, .grid-container .card4, .grid-container .card5 {
+    grid-column: auto;
+  }
+  .grid-container .card3 {
+    grid-row: auto;
+    order: 5;
+  }
+  .grid-container .testimonial-card .detail p {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

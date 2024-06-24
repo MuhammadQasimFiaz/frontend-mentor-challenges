@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.main_bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+}
+.main_bg .main {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  background-color: #fff;
+}
+.main_bg .main .main_left {
+  width: 50%;
+}
+.main_bg .main .main_left .mobile {
+  display: none;
+}
+.main_bg .main .main_right {
+  padding: 0 70px 0 50px;
+  width: 50%;
+}
+.main_bg .main .main_right h1 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.main_bg .main .main_right .accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.main_bg .main .main_right .accordion::after {
+  float: right;
+  content: "﹀";
+}
+.main_bg .main .main_right .active, .main_bg .main .main_right .accordion:hover {
+  color: hsl(14, 88%, 65%);
+}
+.main_bg .main .main_right .active::after {
+  content: "︿";
+}
+.main_bg .main .main_right .panel {
+  padding: 0 18px 5px 18px;
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.main_bg .main .box {
+  position: absolute;
+  left: -5%;
+  top: 40%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_bg {
+    padding: 150px 30px 100px 30px;
+  }
+  .main_bg .main {
+    overflow: unset;
+  }
+  .main_bg .main .main_left .desktop {
+    display: none;
+  }
+  .main_bg .main .main_left .mobile {
+    display: block;
+  }
+  .main_bg .main .main_right {
+    padding: 150px 30px 50px 30px;
+  }
+  .main_bg .main .main_right .active, .main_bg .main .main_right .accordion:hover {
+    color: #000;
+    font-weight: 700;
+  }
+  .main_bg .main .box {
+    display: none;
+  }
+  .main_bg .main {
+    width: auto;
+    display: block;
+    position: relative;
+  }
+  .main_bg .main .main_left .mobile {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main_bg .main .main_right {
+    width: auto;
+  }
+  .main_bg .main .main_right .accordion {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

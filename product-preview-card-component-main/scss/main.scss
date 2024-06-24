@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+p,h2,h3,h4,h5{margin: 0;padding: 0;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+.main {
+    width: 620px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .col-md-6 {
+        padding: 0;
+    }
+    .main_left {
+        img {
+            border-radius: 20px 0 0 20px;
+        }
+        .mobile {
+            display: none;
+        }
+    }
+    .main_right {
+        background-color: #fff;
+        padding: 38px 35px;
+        border-radius: 0 20px 20px 0;
+        h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: hsl(228, 12%, 48%);
+            letter-spacing: 3px;
+        }
+        h3 {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 30px;
+            text-transform: capitalize;
+            margin: 20px 0;
+        }
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: hsl(228, 12%, 48%);
+        }
+        h2 {
+            font-family: 'Fraunces', serif;
+            margin: 30px 0;
+            color: hsl(158, 36%, 37%);
+            display: flex;
+            align-items: center;
+            del {
+                font-size: 14px;
+                color: hsl(228, 12%, 48%);
+                margin-left: 20px;
+            }
+        }
+        a {
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            display: inline-block;
+            background: hsl(158, 36%, 37%);
+            color: #fff;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.45s;
+            span {
+                margin-left: 10px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            &:hover {
+                background-color: hsl(212, 21%, 14%);
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 1200px){
+
+    .container{
+        max-width: 1170px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main {
+        width: auto;
+        position: unset;
+        transform: none;
+        padding: 20px;
+        .main_left {
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: block;
+                border-radius: 20px 20px 0 0;
+            }
+        }
+        .main_right {
+            border-radius: 0 0 20px 20px;
+            padding: 30px;
+            h3 {
+                margin: 10px 0;
+            }
+            h2 {
+                margin: 20px 0;
+            }
+        }
+    }
+}
